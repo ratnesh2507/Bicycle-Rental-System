@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicycle Renting App</title>
+    <title>Bicycle Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Welcome to Bicycle Renting App</h1>
-    <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Rent a Bicycle</a>
-        <a href="#">About Us</a>
+    <nav class="nav">
+        <div class="container flex1">
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="main_list" id="mainListDiv"></div>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Bicycles</a></li>
+                    <li> <a href="#">Payments</a></li>
+                    <li> <a href="#">Routes</a></li>
+                    <li> <a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="media_button">
+            
+        </div>
     </nav>
-    <div id="bikes-list"></div>
-    <section class="bikes">
-        <button id="bikeList">Show Bikes</button>
-    </section>
-    <script src="app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 </html>
