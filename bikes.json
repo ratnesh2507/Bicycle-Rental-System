@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1 ,
+        "name": "Hero" , 
+        "model": "Hero DTB",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 5
+    },
+    {
+        "id": 2 ,
+        "name": "Decathlon" , 
+        "model": "Decathlon Basic",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 5
+    },
+    {
+        "id": 3 ,
+        "name": "Stryder" , 
+        "model": "Stryder AVD",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 5
+    },
+    {
+        "id": 4 ,
+        "name": "Hercules" , 
+        "model": "Hercules A5",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 10
+    },
+    {
+        "id": 5 ,
+        "name": "LadyBird" , 
+        "model": "LadyBird Freewind",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 10
+    },
+    {
+        "id": 6 ,
+        "name": "FireFox" , 
+        "model": "Hero",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 10
+    },
+    {
+        "id": 7 ,
+        "name": "BSA" , 
+        "model": "BSA ",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 15
+    },
+    {
+        "id": 8 ,
+        "name": "Montra" , 
+        "model": "Montra Offroad",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 20
+    },
+    {
+        "id": 9 ,
+        "name": "Atlas" , 
+        "model": "Atlas Hero",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 15
+    },
+    {
+        "id": 10 ,
+        "name": "Mach City" , 
+        "model": "Hero",
+        "quantity": 10 ,
+        "available": "yes",
+        "rent-per-km": 15
+    }
+]
