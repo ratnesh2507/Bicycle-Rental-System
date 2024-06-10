@@ -1,12 +1,12 @@
 // Bike.js
 import mongoose from "mongoose";
-const Schema = mongoose.Schema;
 
-const bikeSchema = new Schema({
+const bikeSchema = new mongoose.Schema({
     brand: { type: String, required: true },
     model: { type: String, required: true },
     type: { type: String, required: true },
     price: { type: Number, required: true }
 });
 
-module.exports = mongoose.model('Bike', bikeSchema);
+const Bike = mongoose.model('Bike',bikeSchema);
+export default Bike;

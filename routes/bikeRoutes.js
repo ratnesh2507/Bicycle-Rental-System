@@ -1,11 +1,13 @@
-import express from "express";
+// bikeRoutes.js
+import express from 'express';
+import { getAllBikes, addBike, getBikeById, updateBike, deleteBike } from '../controllers/bikeController.js';
+
 const router = express.Router();
-const bikeController = require('../controllers/bikeController');
 
-router.get('/', bikeController.getAllBikes);
-router.post('/', bikeController.addBike);
-router.get('/:id', bikeController.getBikeById);
-router.put('/:id', bikeController.updateBike);
-router.delete('/:id', bikeController.deleteBike);
+router.get('/', getAllBikes);
+router.post('/', addBike);
+router.get('/:id', getBikeById);
+router.put('/:id', updateBike);
+router.delete('/:id', deleteBike);
 
-module.exports = router;
+export default router;
