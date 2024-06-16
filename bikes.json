@@ -42,7 +42,7 @@
     {
         "id": 6 ,
         "name": "FireFox" , 
-        "model": "Hero",
+        "model": "FireFox Crusader",
         "quantity": 10 ,
         "available": "yes",
         "rent-per-km": 10
@@ -50,7 +50,7 @@
     {
         "id": 7 ,
         "name": "BSA" , 
-        "model": "BSA ",
+        "model": "BSA Photon",
         "quantity": 10 ,
         "available": "yes",
         "rent-per-km": 15
