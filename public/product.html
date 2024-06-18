@@ -1,64 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font awesome -->
-    <link href="css/all.css" rel="stylesheet" />
-    <!-- Main style sheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <title>Product Page</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/product.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav" id="nav">
+      <a href="#"
+        ><img src="images/logo.png" class="logo" alt="site logo"
+      /></a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">Rental Info</a>
+          </li>
+          <li class="nav_item">
+            <a href="#select" class="nav_link">Pricing</a>
+          </li>
+          <li class="nav_item">
+            <a href="#featured" class="nav_link">Why us</a>
+          </li>
+          <li class="nav_item">
+            <a href="#testimonials" class="nav_link">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+      <div class="book-cta"><a href="">Book now</a></div>
+      <div class="nav_toggle" id="nav-toggle">
+        <i class="fas fa-bars icon"></i>
+      </div>
+    </nav>
+  </header>
 
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            width: 80%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            background-color: #fff;
-        }
-        .image-section, .details-section {
-            width: 50%;
-            padding: 20px;
-        }
-        .image-section img {
-            width: 100%;
-            height: auto;
-        }
-        .details-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .details-section h1 {
-            margin: 0;
-        }
-        .details-section p {
-            margin: 5px 0;
-        }
-    </style>
-    <div class="container">
-        <div class="image-section">
-            <img src="path_to_bicycle_image.jpg" alt="Bicycle Image">
-        </div>
-        <div class="details-section">
-            <h1>Bicycle Name</h1>
-            <p><strong>Brand:</strong> Bicycle Brand</p>
-            <p><strong>Model:</strong> Bicycle Model</p>
-            <p><strong>Price:</strong> $123.45</p>
-            <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
-        </div>
+  <main>
+    <div class="hero">
+      <div class="product_img"></div>
+      <div class="product_description"></div>
     </div>
+  </main>
+  <script src="./js/product.js"></script>
 </body>
 </html>
