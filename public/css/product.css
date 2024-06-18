@@ -1,0 +1,40 @@
+body {
+  background-color: #F8E4DB;
+}
+
+.hero {
+  padding: 200px 50px;
+  width: 100%;
+  display: flex;
+  gap: 400px;
+}
+
+.product_img{
+  width: 500px;
+  display: inline-block;
+}
+
+.product_description{
+  display: inline-block;
+}
+
+.description-title {
+  font-weight: bold;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.product-attribute {
+  font-size: 24px;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-property {
+  font-size: 24px;
+}
