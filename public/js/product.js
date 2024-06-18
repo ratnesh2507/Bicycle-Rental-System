@@ -42,4 +42,8 @@ function createDiscription(data) {
       </div>
     </div>
   `
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c45b928ae90179834a0f464c78b7874edd1639c6
