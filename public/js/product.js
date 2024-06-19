@@ -43,3 +43,5 @@ function createDiscription(data) {
     </div>
   `
 }
+
+bookBtn.addEventListener
