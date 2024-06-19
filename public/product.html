@@ -46,6 +46,40 @@
     </div>
     <button id="book-now" class="book-now btn btn-success">Book Now</button>
   </main>
+  <!--Modal-->
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close">
+          <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header">
+          <h2 id="confirmation"></h2>
+          <h3>Book Now</h3>
+      </div>
+      <div class="modal-content">
+        <p>Fill your details below to confirm the booking!</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name" class="form-input">
+            </div>
+            <div>
+                <label for="phno">Phone No.</label>
+                <input type="tel" id="phno" placeholder="Enter Phone No." class="form-input">
+            </div>
+            <div>
+                <label for="pickUp">PickUp</label>
+                <input type="text" id="pickUp" placeholder="Enter Pickup Location" class="form-input">
+            </div>
+            <div>
+                <label for="dropOff">DropOff</label>
+                <input type="text" id="dropOff" placeholder="Enter DropOff Location" class="form-input">
+            </div>
+            <input type="submit" class="submit-btn" value="Submit">
+          </form>
+      </div>
+    </div>
+  </div>
   <script src="./js/product.js"></script>
 </body>
 </html>
