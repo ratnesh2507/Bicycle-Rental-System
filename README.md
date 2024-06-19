@@ -45,7 +45,7 @@ This repository handles the Front-End logic of this website
 #### To run this application , first we need to run the Backend server for this project
 [Backend](https://github.com/ratnesh2507/Bicycle-rental-Backend)
 
-### Now, run the index.html using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+### Now, run the index.html using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Extension in Visual Studio Code
 
 ## Project Structure
 
