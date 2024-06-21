@@ -22,28 +22,17 @@ const showMenu = (toggleId, navId) => {
   navLink.forEach(n => n.addEventListener('click', linkAction));
   
   
-  //--Scroll on Active Link--//
-  
-  // Get all sections that have an ID defined
+
   const sections = document.querySelectorAll("section[id]");
-  
-  // Add an event listener listening for scroll
   window.addEventListener("scroll", navHighlighter);
   
   function navHighlighter() {
-  
-    // Get current scroll position
     let scrollY = window.pageYOffset;
-  
-    // Now we loop through sections to get height, top and ID values for each
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 400;
         sectionId = current.getAttribute("id");
   
-        /*
-        - Add and remove class .active 
-        */
         if (
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
@@ -60,11 +49,7 @@ const showMenu = (toggleId, navId) => {
     if (this.scrollY <= 10) nav.className = 'header';
     else nav.className = 'header-scroll';
   };
-  
-  /*
-   - Testimonial sliders
-   */
-  
+    
   const slide = document.getElementById("slide");
   const left = document.getElementById("left");
   const right = document.getElementById("right");
