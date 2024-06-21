@@ -6,18 +6,17 @@
 
 :root {
 	--header-height: 4rem;
-	/*--Font Weight--*/
 	--font-medium: 500;
 	--font-semi-bold: 600;
 	--font-bold: 700;
-	/*--Colors--*/
+
 	--primary-color: #F9E4DB;
 	--secondary-color: #FCF9F7;
 	--footer-color: #323232;
 	--white-color: #FFF;
 	--dark-color: #1D1D1F;
 	--dark-light: #B5B5B5;
-	/*--font/typography--*/
+
 	--body-font: 'Montserrat', sans-serif;
 	--big-font: 2rem;
 	--biggest-font: 2.5rem;
@@ -27,7 +26,7 @@
 
 @media screen and (min-width: 768px) {
 	 :root {
-		/*--font/typography--*/
+
 		--big-font: 1.5rem;
 		--bigger-font: 3.1rem;
 		--biggest-font: 5rem;
@@ -38,15 +37,12 @@
 
 @media screen and (max-width: 832px) {
 	 :root {
-		/*--font/typography--*/
 		--big-font: 1rem;
 		--bigger-font: 2rem;
 		--biggest-font: 3rem;
 	}
 }
 
-
-/*--BASE STYLE--*/
 
 *,
 ::before,
@@ -97,7 +93,6 @@ img {
 }
 
 
-/*--Common container and Grid--*/
 
 .container {
 	padding: 2rem 1.5rem;
@@ -114,7 +109,6 @@ img {
 }
 
 
-/*--Section--*/
 
 section {
 	margin-top: calc(var(--header-height) - 4rem);
@@ -122,7 +116,6 @@ section {
 }
 
 
-/*--Section Heading--*/
 
 .section-heading {
 	font-size: var(--bigger-font);
@@ -136,7 +129,6 @@ section {
 }
 
 
-/*--Heading--*/
 
 .heading {
 	font-size: var(--biggest-font);
@@ -147,7 +139,6 @@ section {
 }
 
 
-/*--Paragraph(Description Style)--*/
 
 .description {
 	line-height: 1.8;
@@ -155,7 +146,6 @@ section {
 }
 
 
-/*--Button/CTA --*/
 
 .primary-cta {
 	background: var(--dark-color);
@@ -186,7 +176,6 @@ section {
 	transform: translateX(5px);
 }
 
-/*--Top corner Book now Btn --*/
 
 .book-cta a {
 	font-weight: var(--font-bold);
@@ -200,7 +189,6 @@ section {
 	background: var(--dark-light);
 }
 
-/*--Header --*/
 
 .header {
 	width: 100%;
@@ -226,7 +214,6 @@ section {
 	transition: .5s ease-out;
 }
 
-/*---Site Navigation---*/
 .nav {
 	height: var(--header-height);
 	display: flex;
@@ -234,7 +221,6 @@ section {
 	align-items: center;
 }
 
-/*---ACTIVE LINK---*/
 .active_link {
 	position: relative;
 	color: black;
@@ -331,7 +317,6 @@ section {
 	}
 }
 
-/*-- Section How it Work --*/
 
 .info .cards {
 	margin: 2.5rem 0;
@@ -376,7 +361,6 @@ section {
 }
 
 
-/*--Package styles --*/
 .package {
 	background: var(--secondary-color);
 	padding: 1.2rem 0;
@@ -416,7 +400,6 @@ section {
 }
 
 
-/*-- Section Promotions --*/
 
 .promotions {
 	background: var(--primary-color);
@@ -460,7 +443,6 @@ section {
 }
 
 
-/*-- Section Why Choose Us --*/
 .why-us {
 	background: var(--primary-color);
 }
@@ -539,7 +521,6 @@ section {
 }
 
 
-/*-- Section Bike selection --*/
 
 .bike-list .card {
 	justify-content: center;
@@ -633,7 +614,6 @@ section {
 	cursor: pointer;
 }
 
-/*-- Section Featured --*/
 
 .featured-list {
 	display: flex;
@@ -647,7 +627,6 @@ section {
 	padding: 2rem;
 }
 
-/*-- Section Footer --*/
 
 .footer {
 	background: var(--dark-color);
@@ -694,7 +673,6 @@ section {
 }
 
 
-/*--FORM STYLE--*/
 
 input[type=text] {
 	width: 100%;
@@ -716,7 +694,6 @@ input[type=button]:hover {
 	background: var(--primary-color);
 }
 
-/*--Copyright--*/
 .copyright {
 	text-align: center;
 	font-size: var(--small-font);
@@ -758,7 +735,6 @@ input[type=button]:hover {
 	.nav_toggle {
 		display: none;
 	}
-	/*--Hero--*/
 	.hero {
 		display: flex;
 	}
@@ -768,7 +744,6 @@ input[type=button]:hover {
 		justify-content: center;
 		align-items: center;
 	}
-	/*--Section How it Work--*/
 	.info .container .cards {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -788,14 +763,13 @@ input[type=button]:hover {
 		display: flex;
 		flex-direction: row;
 	}
-	/*--Section Bike selection--*/
 	.bike-list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-gap: 2rem;
 		margin: 5rem 0;
 	}
-	/*--Section Why Us--*/
+
 	.why-us-list {
 		display: flex;
 		box-sizing: border-box;
@@ -808,7 +782,6 @@ input[type=button]:hover {
  	.why-us-content .big-bike {
 		display: none;
 	}
-	/* --Section Featured--*/
 	.featured-item {
 		max-width: 180px;
 		padding-right: 2rem;
@@ -817,7 +790,6 @@ input[type=button]:hover {
 	.view-more {
 		text-align: center;
 	}
-  /* --Section Testimonial--*/
 	.testimonial-inner {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
