@@ -46,7 +46,7 @@ function createDiscription(data) {
       </div>
       <div class="product-details">
         <span class="product-attribute">Product Price: </span>
-        <span class="product-property">${data.rent_per_km}/km</span>
+        <span class="product-property">$${data.rent_per_km}/km</span>
       </div>
     </div>
   `
