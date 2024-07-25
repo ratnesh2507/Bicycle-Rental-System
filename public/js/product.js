@@ -63,7 +63,8 @@ window.addEventListener('click',
 );
 
 const msg = "Thank you for booking with Us!!!";
-submitBtn.addEventListener('click',()=>{
+submitBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
   if(checkFields()){
     if(confirmation.classList.contains('error')){
       confirmation.classList.remove('error');
@@ -82,6 +83,9 @@ submitBtn.addEventListener('click',()=>{
   else{
     confirmation.classList.add('error');
     confirmation.innerHTML = "Please enter full details";
+    setTimeout(function(){
+      confirmation.innerHTML = '';
+    }, 3000);
   }
 });
 
