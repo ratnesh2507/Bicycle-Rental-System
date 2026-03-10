@@ -1,6 +1,6 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import { Bike, LogOut, Menu, X, Clock, User } from "lucide-react";
+import { Bike, LogOut, Menu, X, User } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -13,7 +13,6 @@ export default function Navbar() {
     logout();
     navigate("/login");
   };
-
   const isActive = (path) => location.pathname === path;
 
   const navLink = (path, label) => (
@@ -30,12 +29,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b-2 border-bark">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div
-            className="w-8 h-8 bg-bark text-cream flex items-center justify-center 
-                          group-hover:bg-rust transition-colors duration-200"
-          >
+          <div className="w-8 h-8 bg-bark text-cream flex items-center justify-center group-hover:bg-rust transition-colors duration-200">
             <Bike size={16} />
           </div>
           <span className="font-display font-800 text-xl tracking-tight text-bark">
@@ -43,24 +38,20 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {user ? (
             <>
               {navLink("/bikes", "Browse")}
-
+              {navLink("/history", "History")}
               <div className="flex items-center gap-3 ml-4 pl-4 border-l-2 border-mist">
                 <span className="flex items-center gap-1 text-sm font-mono text-stone">
-                  <User size={13} />
-                  {user.name || user.email}
+                  <User size={13} /> {user.name || user.email}
                 </span>
                 <button
                   onClick={handleLogout}
-                  className="flex items-center gap-1.5 text-sm font-mono text-stone 
-                             hover:text-rust transition-colors duration-200"
+                  className="flex items-center gap-1.5 text-sm font-mono text-stone hover:text-rust transition-colors duration-200"
                 >
-                  <LogOut size={14} />
-                  Logout
+                  <LogOut size={14} /> Logout
                 </button>
               </div>
             </>
@@ -74,7 +65,6 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden p-2"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -83,12 +73,12 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-cream border-t-2 border-mist px-6 py-4 flex flex-col gap-4">
           {user ? (
             <>
               {navLink("/bikes", "Browse Bikes")}
+              {navLink("/history", "Rental History")}
               <hr className="border-mist" />
               <span className="text-sm font-mono text-stone">
                 {user.name || user.email}

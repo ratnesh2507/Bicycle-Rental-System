@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Bikes from "./pages/Bikes";
+import History from "./pages/History";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -40,6 +41,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Bikes />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/history"
+            element={
+              <ProtectedRoute>
+                <History />
               </ProtectedRoute>
             }
           />
